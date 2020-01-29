@@ -5,11 +5,12 @@ let booleanVar= false;
 function performLogic(buttonId, tileId) {
     $(buttonId).remove()
     $(tileId).html(player)
-    changePlayer();
-    changeTurn();
     checkVerticalWins();
     checkHorizontalWins();
     checkDiagonalWins();
+    changePlayer();
+    changeTurn();
+    
 }
 
 function changePlayer(){
